@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+<link href="//db.onlinewebfonts.com/c/44a21eecd860f09edafc460507831238?family=The+Avengers" rel="stylesheet"
+    type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Inconsolata:wght@200;300&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Inconsolata:wght@200;300&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Inconsolata:wght@200;300&family=Lato&family=Tapestry&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img/background.jpg);
+        background-size: 1500px 1287px;
+
+    }
+
+
+
+    .left {
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        left: 43px;
+        margin: 5px;
+        font-family: "The Avengers";
+        font-size: 25px;
+        font-size: 33px;
+
+
+    }
+
+    #avenger-text {
+        margin: 15px 0px;
+    }
+
+    .left img {
+        width: 93px;
+
+    }
+
+    .centre {
+        /* border: 2px solid black; */
+        display: block;
+        width: 55%;
+        margin: 51px auto;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 2px 5px;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+
+
+
+
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .navbar a {
+        text-decoration: none;
+
+        color: black;
+        padding: 34px 20px;
+        font-size: 25px;
+
+    }
+
+    .right {
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 43px;
+        margin: 5px;
+        font-family: 'Cabin', sans-serif;
+        ;
+
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn img {
+        width: 31px;
+        margin-bottom: -11px;
+        border: transparent;
+
+    }
+
+    .right input {
+        border-radius: 7px;
+        margin: 15px 0px;
+        padding: 9px;
+    }
+
+    .container {
+        border: 6px solid #000000;
+    border-radius: 11px;
+    margin: 316px 56px;
+    padding: 26px 32px;
+    margin-right: 682px;
+    }
+
+    .form-group input {
+
+        text-align: center;
+        display: block;
+        margin: 13px auto;
+        padding: 7px;
+        width: 355px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-family: 'Tapestry', cursive;
+        font-size: 49px;
+    }
+
+    .container button {
+        display: block;
+    width: 21%;
+    margin: 50px auto;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.932);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+}
+.container button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+    }
+
+    .select select{
+        display: block;
+        width: 49%;
+        margin: auto;
+        border-radius: 8px;
+
+        padding: 6px;
+    }
+
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="left">
+            <div><img src="Img/logo.png" alt="logo"></div>
+            <div id="avenger-text"> Avengers </div>
+
+        </div>
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Book the tower</a></li>
+                <li><a href='#'>About us</a></li>
+                <li><a href='#'>Contact us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <input placeholder="Search the site"></input>
+            <button class="btn"><img src="img/search.png"></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Book your tour now!!!</h1>
+        <form action="abc.php">
+            <div class="form-group"> <input id="name" type="text" placeholder="Enter your name"></div>
+            <div class="form-group"> <input id="adress" type="text" placeholder="Enter your Adress"></div>
+            <div class="form-group"> <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    placeholder="Enter your Mobile no."></div>
+            <div class="form-group"> <input type="email" placeholder="Enter your email"></div>
+            <div class="form-group"> <input type="number" min="0" max="10" placeholder="Number of people"></div>
+            <div class="select"> <select id="time">
+                    <option value="10-12">10:00 AM</option>
+                    <option value="11-01">11:00 AM</option>
+                    <option value="12-02">12:00 noon</option>
+                    <option value="01-03">01:00 PM</option>
+                    <option value="02-04">02:00 PM</option>
+                    <option value="03-05">03:00 PM</option>
+                    <option value="04-06">04:00 PM</option>
+                    <option value="05-07">05:00 PM</option>
+
+                </select></div>
+            <button class="Book">Book</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
